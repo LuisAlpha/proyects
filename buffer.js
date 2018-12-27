@@ -1,2 +1,3 @@
-const buf = Buffer.from('saca las lolis ','ascii');
-console.log(buf);
+const b = Buffer.from('saca las lolis');
+
+console.log(b.length);
