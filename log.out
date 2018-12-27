@@ -1,0 +1,43 @@
+ before: 6
+ before: 6
+{indentStr}after: 6
+destroy: 6
+ before: 7
+{indentStr}after: 7
+ before: 8
+{indentStr}after: 8
+ before: 6
+{indentStr}after: 6
+destroy: 6
+ before: 7
+{indentStr}after: 7
+ before: 8
+{indentStr}after: 8
+ before: 6
+after: 6
+destroy: 6
+ before: 7
+after: 7
+ before: 8
+after: 8
+ before: 6
+after: 6
+destroy: 6
+ before: 7
+after: 7
+ before: 8
+after: 8
+before:  6
+after:  6
+destroy:  6
+before:  7
+after:  7
+before:  8
+after:  8
+before: 6
+after: 6
+destroy: 6
+before: 7
+after: 7
+before: 8
+after: 8
