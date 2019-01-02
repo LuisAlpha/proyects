@@ -1,9 +1,8 @@
-const {spawn} = require('child_process');
-const grep = require('grep', ['ssh']);
+const { spawn } = require('child_process');
 
-grep.on('close', (code, signal) =>{
-console.log(
-`child process terminated due to receipt of signal ${signal}`);
+const subprocess = spawn(process.argv[0], ['child_program.js'],{
+detached: true,
+stdio: 'ignore'
 });
 
-grep.kill('SIGHUP');
+subprocess.unref();

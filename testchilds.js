@@ -1,10 +1,7 @@
-const  util = require('util');
-const execFile =  util.promisify(require('child_process').execFile);
-async  function getVersion(){
-const { stdout, stderr } = await execFile('node', ['--version']);
+const { spawn } = require('child_process');
 
-console.log(`informacion en stdout : ${stdout}`);
+const subprocess = spawn('ls',['-a']);
 
-}
-
-getVersion();
+subprocess.stdout.on('data',(data)=>{
+console.log(data.toString());
+});
